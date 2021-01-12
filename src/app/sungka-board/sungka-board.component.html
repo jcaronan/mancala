@@ -1,0 +1,24 @@
+<p>sungka-board works!</p>
+
+<table>
+  <tr>
+      <td rowspan="3" (click)="update(sungka.gameId, 7)">{{sungka.pits[6].value}}</td>
+  </tr>
+  <tr>
+    <td (click)="update(sungka.gameId, 6)">{{sungka.pits[5].value}}</td>
+    <td (click)="update(sungka.gameId, 5)">{{sungka.pits[4].value}}</td>
+    <td (click)="update(sungka.gameId, 4)">{{sungka.pits[3].value}}</td>
+    <td (click)="update(sungka.gameId, 3)">{{sungka.pits[2].value}}</td>
+    <td (click)="update(sungka.gameId, 2)">{{sungka.pits[1].value}}</td>
+    <td (click)="update(sungka.gameId, 1)">{{sungka.pits[0].value}}</td>
+    <td (click)="update(sungka.gameId, 14)" rowspan="2">{{sungka.pits[13].value}}</td>
+  </tr>
+  <tr>
+    <td (click)="update(sungka.gameId, 8)" >{{sungka.pits[7].value}}</td>
+    <td (click)="update(sungka.gameId, 9)" >{{sungka.pits[8].value}}</td>
+    <td (click)="update(sungka.gameId, 10)" >{{sungka.pits[9].value}}</td>
+    <td (click)="update(sungka.gameId, 11)" >{{sungka.pits[10].value}}</td>
+    <td (click)="update(sungka.gameId, 12)" >{{sungka.pits[11].value}}</td>
+    <td (click)="update(sungka.gameId, 13)" >{{sungka.pits[12].value}}</td>
+  </tr>
+</table>

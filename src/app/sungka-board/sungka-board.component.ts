@@ -38,8 +38,6 @@ export class SungkaBoardComponent implements OnInit {
 
   ngOnInit(): void {
     this.createGame();
-    console.log(this.sungka);
-
   }
 
   createGame(): void {
@@ -47,8 +45,11 @@ export class SungkaBoardComponent implements OnInit {
    .subscribe(sungka => this.sungka = sungka);
  }
 
-  update(gameId, index) {
-    console.log(index);
+  update(sungka, index) {
+    sungka.pits[index-1].value = sungka.pits[index-1].value -1;
+    this.api.updateGame(sungka)
+    .subscribe(sungka => this.sungka = sungka);
+    console.log(sungka, index);
   }
 
 }

@@ -20,11 +20,8 @@ export class SungkaService {
     return this.http.get<Sungka>(this.api_url);
   }
 
-  // updateGame(gameId: number, index: number) :  Observable<any> {
-  //   return this.http.put(this.api_url, hero, this.httpOptions).pipe(
-  //     tap(_ => this.log(`updated hero id=${hero.id}`)),
-  //     catchError(this.handleError<any>('updateHero'))
-  //   );
-  // }
+  updateGame(sungka: Sungka) :  Observable<Sungka> {
+    return this.http.post<Sungka>(this.api_url, sungka, this.httpOptions);
+  }
 
 }

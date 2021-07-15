@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SungkaBoardComponent } from './sungka-board.component';
+import { MancalaBoardComponent } from './mancala-board.component';
 
-describe('SungkaBoardComponent', () => {
-  let component: SungkaBoardComponent;
-  let fixture: ComponentFixture<SungkaBoardComponent>;
+describe('MancalaBoardComponent', () => {
+  let component: MancalaBoardComponent;
+  let fixture: ComponentFixture<MancalaBoardComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SungkaBoardComponent ]
+      declarations: [ MancalaBoardComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SungkaBoardComponent);
+    fixture = TestBed.createComponent(MancalaBoardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

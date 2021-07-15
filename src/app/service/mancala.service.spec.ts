@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { SungkaService } from './sungka.service';
+import { MancalaService } from './mancala.service';
 
-describe('SungkaService', () => {
-  let service: SungkaService;
+describe('MancalaService', () => {
+  let service: MancalaService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(SungkaService);
+    service = TestBed.inject(MancalaService);
   });
 
   it('should be created', () => {

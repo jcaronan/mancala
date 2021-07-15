@@ -5,18 +5,18 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { SungkaBoardComponent } from './sungka-board/sungka-board.component';
+import { MancalaBoardComponent } from './mancala-board/mancala-board.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SungkaBoardComponent
+    MancalaBoardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-     HttpClientModule
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
